@@ -1,8 +1,6 @@
 #CONFIRMING ANAGRAM
-def confirmAnagram():
-    print("Input two words and check if they are anagrams")
-    firstWord = input("Enter your first word: \n")
-    secondWord = input("Enter your second word: \n")
+def confirmAnagram(firstWord, secondWord):
+    
     if (len(firstWord) == len(secondWord)):
         string1 = sorted(firstWord)
         string2 = sorted(secondWord)
@@ -14,6 +12,6 @@ def confirmAnagram():
             print("False") # This is going to return False, if the condition is not met
             print("%s and %s" % (firstWord, secondWord) + " are not anagrams \n")
     else:
-        print( "Wrong input..... Number of inputed letters are not the same" )
+        print( "Number of letters are not the same" )
 
-confirmAnagram()
+confirmAnagram("secure", "rescue" )
